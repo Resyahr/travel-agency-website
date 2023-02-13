@@ -1,0 +1,237 @@
+:root {
+    /* Colors */
+    --clr-orange: #ff7700;
+    --clr-green: #00FF00;
+}
+
+@media screen and (max-width: 575px) {
+    .feature-img {
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+    }
+    .img {
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+    }
+
+    .card img {
+        object-fit: cover;
+        height: 200px;
+        width: 100%;
+    }
+
+    .summer-card {
+        height: 480px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .feature-img {
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+    }
+
+    .img {
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+    }
+
+    .card img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .summer-card {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .feature-img {
+        object-fit: cover;
+        width: 225px;
+        height: 225px;
+    }
+
+    .img {
+        object-fit: cover;
+        width: 330px;
+        height: 330px;
+    }
+
+    .card img {
+        height: 200px;
+        width: 100%;
+    }
+
+    .summer-card {
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .feature-img {
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+    }
+    .img {
+        object-fit: cover;
+        width: 255px;
+        height: 255px;
+    }
+
+    .card img {
+        object-fit: cover;
+    }
+
+    .summer-card {
+        height: 450px;
+    }
+}
+
+nav {
+    position: fixed !important;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+nav .logo {
+    font-size: 1.5rem;
+}
+
+nav i {
+    color: sandybrown;
+    font-size: 1rem;
+}
+
+nav .palm-tree {
+    width: 23px;
+}
+
+.jumbotron {
+    height: 85vh;
+    background-image: url(./assets/jumbotron-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 5;
+}
+
+.jumbotron .row::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(22,22,22);
+    background: radial-gradient(circle, rgba(22,22,22,1) 0%, rgba(47,47,47,0.9122023809523809) 50%, rgba(56,56,56,0.4248074229691877) 100%);
+    opacity: .5;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* Text color */
+.text-orange {
+    color: #ff7700;
+}
+
+.text-green {
+    color: #03ff03;
+}
+
+.text-red {
+    color: red !important;
+}
+
+/* Filters */
+.on-top {
+    position: absolute;
+    z-index: 6;
+}
+
+.carousel-filter::after {
+    content: '';
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5984768907563025) 25%, rgba(255,255,255,0) 38%);
+    opacity: .4;
+    position: absolute;
+    z-index: 5;
+}
+
+#summer {
+    background-image: url(./assets/summer.jpg);
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    z-index: 5;
+}
+
+.summer-filter::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgb(22,22,22);
+    background: radial-gradient(circle, rgba(22,22,22,1) 0%, rgba(47,47,47,0.9122023809523809) 50%, rgba(56,56,56,0.4248074229691877) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .5;
+}
+
+#carousel-testimonials-filter::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgb(22,22,22);
+    background: radial-gradient(circle, rgba(22,22,22,1) 0%, rgba(47,47,47,0.9122023809523809) 70%, rgba(56,56,56,0.4248074229691877) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 1;
+}
+
+#summer-cards {
+    margin-top: 4rem !important;
+}
+
+#discount {
+    position: absolute;
+    color: #03FF03;
+    width: 25%;
+    z-index: 5;
+    
+}
+
+.text-discount {
+    color: red;
+}
+
+#discount-btn:hover .text-discount {
+    color: #00FF00;
+}
+
+.text-red {
+    color: red;
+}

@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travis</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://kit.fontawesome.com/807fe9c7bc.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script defer src="./script.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" data-toggle="collapse" data-target=".navbar-collapse.show">
+    <a class="navbar-brand" href="#">
+      <i class="fa-solid fa-umbrella-beach logo mr-3"></i> Travis
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
+      <div class="navbar-nav text-center text-lg-left">
+        <a class="nav-link border-bottom active" href="#"> <i class="fa-solid fa-house"></i> Home <span
+            class="sr-only">(current)</span></a>
+        <a class="nav-link mx-lg-3 border-bottom" href="#weekly-deals"> <i class="fa-solid fa-percent"></i> Weekly
+          Deals</a>
+        <a class="nav-link mx-lg-3 border-bottom" href="#summer"><img class="palm-tree" src="./assets/palm-tree.svg" alt="">
+          Summer Destinations</a>
+        <a class="nav-link mx-lg-3 border-bottom d-none d-md-block" href="#daily-deals"><i class="fa-solid fa-heart"></i>
+          Daily Deals </a>
+        <a class="nav-link mx-lg-3 border-bottom" href="./photo-credits.pdf" download="Photo Credits"> <i class="fa-solid fa-download"></i> 
+          Photo Credits (Downloads PDF) </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="container-fluid p-0" data-toggle="collapse" data-target=".navbar-collapse.show">
+    <div class="row">
+      <div class="col">
+        <div class="jumbotron d-flex align-items-center rounded-0 mx-sm-0">
+          <div class="container text-center text-md-left text-light pl-0">
+            <h1 class="display-4"> <span class="text-green"> Travel </span> wherever you want with <span
+                class="text-green">Travis</span>.</h1>
+            <p class="lead">Choose your destination on <span class="text-green">Travis</span>, prepare your stuff and
+              enjoy.</p>
+          </div>
+
+          <div class="row"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Features -->
+  <section id="features" class="container-fluid p-0" data-toggle="collapse" data-target=".navbar-collapse.show">
+    <div class="container border-bottom">
+      <div class="row mb-4 text-center text-md-left">
+        <!-- Featured title -->
+        <div class="col">
+          <h2 class="text-orange text-center">Everything you need in one place</h2>
+        </div>
+      </div>
+
+      <!-- Accommodation -->
+      <div class="row justify-content-between">
+        <div class="col-12 col-md-4">
+          <div class="col text-center">
+            <img src="./assets/accommodation.jpg" class="feature-img rounded" alt="">
+          </div>
+
+          <div class="row mt-2">
+            <div class="col text-center">
+              <h5>Best-suited accommodation</h5>
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-5">
+            <div class="col text-center">
+              <p class="text-muted">Find your desired accommodation, <br>
+                <span class="text-info font-weight-bold">We find the cheapest prices. </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recommendations -->
+        <div class="col-12 col-md-4">
+          <div class="col text-center">
+            <img src="./assets/tourism.jpg" class="feature-img rounded" alt="">
+          </div>
+
+          <div class="row mt-2">
+            <div class="col text-center">
+              <h5>Recommended places</h5>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col text-center mb-5">
+              <p class="text-muted">You name the place you want to go, <br>
+                <span class="text-info font-weight-bold">We recommend you the best touristic and not so known places.
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trust -->
+        <div class="col-12 col-md-4">
+          <div class="col text-center">
+            <img src="./assets/trusted.jpg" class="feature-img rounded" alt="">
+          </div>
+
+          <div class="row mt-2">
+            <div class="col text-center">
+              <h5>Trusted by millions</h5>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col text-center mb-5">
+              <p class="text-muted">Tons of daily searches, <br>
+                <span class="text-info font-weight-bold">We know the importance of trust, that's why we work hard
+                  everyday. </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Weekly Deals Section-->
+  <section id="weekly-deals" class="container my-5" data-toggle="collapse" data-target=".navbar-collapse.show">
+    <div class="row">
+      <div class="col">
+        <h2 class="text-red display-4 text-center"> WEEK MADNESS </h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <p class="text-muted text-center">Places for you to discover, on discount just for a week.</p>
+      </div>
+
+    </div>
+
+    <!-- Carousel 1-->
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+        <div id="chileCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#chileCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#chileCaptions" data-slide-to="1"></li>
+            <li data-target="#chileCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-filter rounded"></div>
+          <div class="carousel-inner rounded shadow ">
+            <div class="carousel-item active" data-interval="4000">
+              <img src="./assets/discount-tag2.png" alt="" id="discount">
+              <img src="./assets/destinations/chile/chile1.jpg" class="d-block w-100 img" alt="...">
+              <div class="carousel-caption">
+                <h5>Chile</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/discount-tag2.png" alt="" id="discount">
+              <img src="./assets/destinations/chile/chile2.jpg" class="d-block w-100 img" alt="...">
+              <div class="carousel-caption">
+                <h5>Chile</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/discount-tag2.png" alt="" id="discount">
+              <img src="./assets/destinations/chile/chile3.jpg" class="d-block w-100 img" alt="...">
+              <div class="carousel-caption">
+                <h5>Chile</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev on-top" type="button" data-target="#chileCaptions" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button class="carousel-control-next on-top" type="button" data-target="#chileCaptions" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </button>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col text-center">
+            <button id="discount-btn" class="btn btn-outline-primary rounded mb-5 px-5">
+              From <span class="text-discount font-weight-bold"> 360$ </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel 2-->
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+        <div id="croatiaCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#croatiaCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#croatiaCaptions" data-slide-to="1"></li>
+            <li data-target="#croatiaCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-filter rounded"></div>
+          <div class="carousel-inner rounded shadow">
+            
+            <div class="carousel-item active" data-interval="8000">
+              <img src="./assets/discount-tag2.png" alt="" id="discount">
+              <img src="./assets/destinations/croatia/croatia1.jpg" class="d-block w-100 img" alt="...">
+              <div class="carousel-caption">
+                <h5>Croatia</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/discount-tag2.png" alt="" id="discount">
+              <img src="./assets/destinations/croatia/croatia2.jpg" class="d-block w-100 img" alt="...">
+              <div class="carousel-caption">
+                <h5>Croatia</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/discount-tag2.png" alt="" id="discount">
+              <img src="./assets/destinations/croatia/croatia3.jpg" class="d-block w-100 img" alt="...">
+              <div class="carousel-caption">
+                <h5>Croatia</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev on-top" type="button" data-target="#croatiaCaptions" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button id="discount-btn" class="carousel-control-next on-top" type="button" data-target="#croatiaCaptions"
+            data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </button>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col text-center">
+            <button id="discount-btn" class="btn-outline-primary btn rounded mb-5 px-5">
+              From <span class="text-discount font-weight-bold"> 421$ </span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel 3-->
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+        <div id="hungaryCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#hungaryCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#hungaryCaptions" data-slide-to="1"></li>
+            <li data-target="#hungaryCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-filter rounded"></div>
+          <div class="carousel-inner rounded shadow">
+            <div class="carousel-item active" data-interval="8500">
+              <img src="./assets/discount-tag2.png" alt="" id="discount">
+              <img src="./assets/destinations/hungary/hungary1.jpg" class="d-block w-100 img" alt="...">
+              <div class="carousel-caption">
+                <h5>Hungary</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/discount-tag2.png" alt="" id="discount">
+              <img src="./assets/destinations/hungary/hungary2.jpg" class="d-block w-100 img" alt="...">
+              <div class="carousel-caption">
+                <h5>Hungary</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/discount-tag2.png" alt="" id="discount">
+              <img src="./assets/destinations/hungary/hungary3.jpg" class="d-block w-100 img" alt="...">
+              <div class="carousel-caption">
+                <h5>Hungary</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev on-top" type="button" data-target="#hungaryCaptions" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button id="discount-btn" class="carousel-control-next on-top" type="button" data-target="#hungaryCaptions"
+            data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </button>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col text-center">
+            <button id="discount-btn" class="btn-outline-primary btn rounded mb-5 px-5">
+              From <span class="text-discount font-weight-bold"> 236$ </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel 4-->
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+        <div id="vietnamCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#vietnamCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#vietnamCaptions" data-slide-to="1"></li>
+            <li data-target="#vietnamCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-filter rounded"></div>
+          <div class="carousel-inner rounded shadow" data-interval="2000">
+            <div class="carousel-item active">
+              <img src="./assets/discount-tag2.png" alt="" id="discount">
+              <img src="./assets/destinations/vietnam/vietnam1.jpg" class="d-block w-100 img" alt="...">
+              <div class="carousel-caption">
+                <h5>Vietnam</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/discount-tag2.png" alt="" id="discount">
+              <img src="./assets/destinations/vietnam/vietnam2.jpg" class="d-block w-100 img" alt="...">
+              <div class="carousel-caption">
+                <h5>Vietnam</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/discount-tag2.png" alt="" id="discount">
+              <img src="./assets/destinations/vietnam/vietnam3.jpg" class="d-block w-100 img" alt="...">
+              <div class="carousel-caption">
+                <h5>Vietnam</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev on-top" type="button" data-target="#vietnamCaptions" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button class="carousel-control-next on-top" type="button" data-target="#vietnamCaptions" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </button>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col text-center">
+            <button id="discount-btn" class="btn-outline-primary btn rounded mb-5 px-5">
+              From <span class="text-discount font-weight-bold"> 200$ </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Summer Options -->
+  <section id="summer" class="container-fluid shadow" data-toggle="collapse" data-target=".navbar-collapse.show">
+    <div class="summer-bg"></div>
+    <div class="summer-filter"></div>
+
+    <div class="container col-12 pt-5 mx-1">
+      <div class="row mb-2">
+        <div class="col">
+          <h2 class="text-light display-4 text-center">Summer Destinations</h2>
+        </div>
+      </div>
+    </div>
+
+    <div id="summer-cards" class="container-fluid my-2 flex-nowrap flex-md-wrap justify-content-center">
+
+      <div class="row ">
+        <!-- Card 1 -->
+        <div class="col-6 col-md-4 col-lg-2 my-3 p-1">
+          <div class="card summer-card">
+            <img src="./assets/destinations/venezuela/angel-falls.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <h5 class="card-title text-center text-primary">Angel Fall, Venezuela</h5>
+              <p class="card-text text-muted">Get amused by the tallest Waterfall in the world.</p>
+              <a href="#" class="btn btn-primary text-center">See availability</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-6 col-md-4 col-lg-2 my-3 p-1">
+          <div class="card summer-card">
+            <img src="./assets/destinations/mexico/cancun1.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <h5 class="card-title text-center text-primary">Cancun, Mexico</h5>
+              <p class="card-text text-muted">Beatiful beaches and a good warm weather wait for you just here.</p>
+              <a href="#" class="btn btn-primary text-center">See availability</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-6 col-md-4 col-lg-2 my-3 p-1">
+          <div class="card summer-card">
+            <img src="./assets/destinations/spain/mallorca.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <h5 class="card-title text-center text-primary">Mallorca, Spain</h5>
+              <p class="card-text text-muted">Cristal clear beaches and city full of history.</p>
+              <a href="#" class="btn btn-primary text-center">See availability</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-6 col-md-4 col-lg-2 my-3 p-1">
+          <div class="card summer-card">
+            <img src="./assets/destinations/spain/barcelona.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <h5 class="card-title text-center text-primary">Barcelona, Spain</h5>
+              <p class="card-text text-muted">Architecture? Urban beauties? Beaches? then this is your option.</p>
+              <a href="#" class="btn btn-primary text-center">See availability</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-6 col-md-4 col-lg-2 my-3 p-1">
+          <div class="card summer-card">
+            <img src="./assets/destinations/vietnam/vietnam-cards.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <h5 class="card-title text-center text-primary">Ha Long Bay, Vietnam</h5>
+              <p class="card-text text-muted">Place full of good vibes, good people and of course, good beaches.</p>
+              <a href="#" class="btn btn-primary text-center">See availability</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-6 col-md-4 col-lg-2 my-3 p-1">
+          <div class="card summer-card">
+            <img src="./assets/destinations/italy/venice.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <h5 class="card-title text-center text-primary">Italy, Venice</h5>
+              <p class="card-text text-muted">Colorful, cheerful city.</p>
+              <a href="#" class="btn btn-primary text-center">See availability</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+  </section>
+
+  <!-- Daily Deal Section -->
+  <section id="daily-deals" class="container-fluid my-5 py-4 d-none d-md-block mb-5" data-toggle="collapse" data-target=".navbar-collapse.show">
+    <div class="container  pb-3">
+      <div class="row text-center justify-content-center">
+        <h2 class="display-4 text-discount mb-4">
+          Day's Deal
+        </h2>
+      </div>
+
+      <div class="row align-content-between shadow py-3">
+        
+        <div class="col-12 col-md-8">
+          <div class="row">
+            <div class="col">
+              <h3 class="text-primary text-center">Paris, France</h3>
+            </div>
+          </div>
+          <img src="./assets/discount-tag2.png" alt="" id="discount" class="rounded">
+          <img src="./assets/destinations/france/france.jpg" style="width: 100%;" alt="" class="rounded">
+        </div>
+
+        <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center mt-3">
+          <div class="row">
+            <div class="col">
+              <h5 class="text-left  mt0-4 mt-md-5 bg-info p-2 text-light rounded">Included on this offer:</h5>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <ul>
+                <li>Taxi from airport <i class="fa-solid fa-check text-green"></i></li> 
+                <li>Breakfast <i class="fa-solid fa-check text-green"></i></li>
+                <li>Tour ticket to the Eifel Tower <i class="fa-solid fa-check text-green"></i></li>
+                <li>For only <span class="text-red font-weight-bold"> 360$</span></li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="row w-75 mt-5">
+            <div class="col-12 text-left">
+              <button class="btn btn-outline-primary px-3 w-100">
+                Buy now
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="container mt-5" data-toggle="collapse" data-target=".navbar-collapse.show">
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center display-4 text-orange">Our user's say... </h2>
+      </div>
+    </div>
+
+    <div class="row my-5">
+
+      <!-- User 1 -->
+      <div class="col-6 col-md-3 mb-3">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="./assets/people/person1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-md-block">
+                <h5>{users-name}</h5>
+                <q><p>User's words.</p></q> 
+                <img src="./assets/five-stars.png" alt="" class="w-100">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- User 2 -->
+      <div class="col-6 col-md-3 mb-3">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="./assets/people/person2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-md-block">
+                <h5>{users-name}</h5>
+                <q><p>User's words.</p></q> 
+                <img src="./assets/three-stars.png" alt="" class="w-100">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- User 3 -->
+      <div class="col-6 col-md-3 mb-3">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="./assets/people/person3.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-md-block">
+                <h5>{users-name}</h5>
+                <q><p>User's words.</p></q> 
+                <img src="./assets/four-stars.png" alt="" class="w-100">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- User 4 -->
+      <div class="col-6 col-md-3 mb-3">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="./assets/people/person4.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-md-block">
+                <h5>{users-name}</h5>
+                <q><p>User's words.</p></q> 
+                <img src="./assets/five-stars.png" alt="" class="w-100">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section id="footer" class="container-fluid bg-dark px-5">
+    <div class="row pt-5">
+      <div class="col-12 text-center">
+        <h3 class="text-green">Travis &trade; </h3>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-12">
+        <div class="row justify-content-center">
+          <h5 class="text-light text-center">Follow us on our social networks</h5>
+        </div>
+        
+        <div class="row justify-content-center">
+          <i class="fa-brands fa-facebook p-3 text-light"></i>
+          <i class="fa-brands fa-twitter p-3 text-light"></i>
+          <i class="fa-brands fa-instagram p-3 text-light"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center text-center">
+      <div class="col-12 col-md-6 col-lg-3 text-light mb-4">
+        <h6>Links</h6>
+
+        <ul class="list-unstyled">
+          <li class="text-muted">
+            <a href="#"> About us </a> 
+          </li>
+          <li class="text-muted">
+            <a href="#"> Contact us </a> 
+          </li>
+          <li class="text-muted">
+            <a href="#"> Terms of Use </a> 
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 text-light mb-4">
+        <h6>Download our app</h6>
+        <a href="#" class="border-right px-2"> <i class="fa-brands fa-google-play"></i> On Google play </a>
+        <a href="#" class="px-2"> <i class="fa-brands fa-apple"></i> On Apple Store </a>
+      </div>
+    </div>
+
+    <div class="row text-light justify-content-center my-3">
+      <div class="col text-center">
+        <h6>Mentions, Credits and Thanks</h6>
+        <a href="./photo-credits.pdf" download="credits">Credits PDF</a>
+      </div>
+    </div>
+
+    <div class="row justify-content-end p-3 text-light">
+      <small>Designed and developed by Travis &trade; all rights reserved.</small>
+    </div>
+  </section>
+
+
+
+</body>
+
+</html>
